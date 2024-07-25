@@ -1,0 +1,382 @@
+:root{
+    --tg-body-font-family: 'Hind', sans-serif;
+    --tg-heading-font-family: 'Lexend Deca', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hind", sans-serif;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 6px 14px;
+    background-color: #f5f5f7;
+    /* border-bottom: 1px solid black; */
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.logo {
+    width: 150px;
+}
+
+.navbar-name{
+    margin-left: 55px;
+}
+
+.navlink {
+    text-decoration: none;
+    padding: 37px 12px;
+    font-family: var(--tg-heading-font-family);
+}
+
+.non-active {
+    color: #082a5e;
+}
+
+.active {
+    color: #1363df;
+}
+
+.cat-form {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    margin-left: 32px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #D0DAE9;
+    background-color: #ffffff;
+    padding: 9px 36px 9px 15px;
+    border-radius: 4px;
+    align-items: center;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: #082a5e;
+    font-size: 16px;
+    border: none;
+    font-family: var(--tg-heading-font-family);
+}
+
+.dropdown-icon{
+    color: #1363df;
+    padding-right: 5px;
+    font-size: 22px;
+}
+
+.dropdown-content {
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 5px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.drop-item{
+    text-decoration: none;
+    text-align: left;
+    color: #082a5e;
+    padding-left: 5px;
+    font-weight: 500;
+}
+
+.drop-item:hover{
+    background-color: #1363df;
+    color: #ffffff;
+}
+
+.search-grp{
+    width: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #D0DAE9;
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 12px 20px 10px 20px;
+    height: 45px;
+    font-size: 15px;
+}
+
+.search{
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.serach-icon{
+    font-size: 24px;
+    color: #54595F;
+    font-weight: 700;
+}
+
+.line::after{
+    content: '';
+    width: 2px;
+    height: 35px;
+    background-color: #b2bdcd;
+    display: inline-block;
+    position: absolute;
+    top: 36%;
+    right: 21.4%;
+}
+
+.cart-div{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.cart-btn{
+    width: 42px;
+    position: relative;
+}
+
+.cart-icon{
+    font-size: 24px;
+}
+
+.cart-count{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    font-size: 14px;
+    font-family: var(--tg-heading-font-family);
+    background-color: #1363df;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -7px;
+    right: -6px;
+}
+
+.login-btn{
+    padding: 10px 21px;
+    font-family: var(--tg-body-font-family);
+    color: #5a7093;
+    font-weight: 600;
+    background-color: #ffffff;
+    border: 1px solid #D0DAE9;
+    border-radius: 4px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.try-free-btn{
+    background-color: #1363df;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 4px;
+    border: transparent;
+    padding: 12px 12px;
+    font-family: var(--tg-body-font-family);
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.menu{
+    color: #1363df;
+    font-size: 35px;
+    display: none;
+}
+
+/* Offcanvas */
+.offcanvas-body{
+    padding: 0;
+}
+
+.offc-logo{
+    width: 150px;
+}
+
+.mobile-serach{
+    margin: 20px;
+    border-radius: 4px;
+    background-color: #e7effc;
+}
+
+.mobile-serach input{
+    width: 90%;
+    border: none;
+    outline: none;
+    padding: 10px 45px 10px 20px;
+    background-color: #e7effc;
+    border-radius: 4px;
+}
+
+.serach-icon{
+    font-size: 24px;
+    color: #082a5e;
+    font-weight: 700;
+}
+
+.mobile-nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+}
+
+.mobile-navlink{
+    padding: 10px;
+    border: 1px solid #D0DAE9;
+    border-bottom: none;
+}
+
+.btm-border{
+ border-bottom: 1px solid #D0DAE9;
+}
+
+.mobile-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.sign-up{
+    padding: 12px 21px;
+    font-family: var(--tg-body-font-family);
+    color: #5a7093;
+    font-weight: 600;
+    background-color: #ffffff;
+    border: 1px solid #D0DAE9;
+    border-radius: 4px;
+    margin: 0 5px 0 25px;
+}
+
+.mobile-try-free{
+    background-color: #1363df;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 4px;
+    border: transparent;
+    padding: 11px 20px 11px;
+    font-family: var(--tg-body-font-family);
+    margin: 0 10px;
+}
+
+.mobile-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mob-icon{
+    width: 20px;
+    font-size: 20px;
+    color: #082a5e;
+    width: fit-content;
+    border: 1px solid #D0DAE9;
+    border-radius: 4px;
+    padding: 6px 10px;
+    margin: 0 10px;
+}
+
+@media  (max-width: 1440px){
+    .navbar{
+        padding: 15px 35px;
+    }
+
+    .try-free-btn{
+        display: none;
+    }
+
+    .line::after{
+        width: 2px;
+        right: 15.5%;
+    }
+}
+
+@media (max-width: 1030px) {
+    .navbar{
+        padding: 15px 48px;
+    }
+    .navbar-name{
+        display: none;
+    }
+
+    .login-btn{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+        margin-left: 20px;
+    }
+
+    .cat-form{
+        margin-left: 120px;
+    }
+
+    .search-grp{
+        width: 351px;
+    }
+
+    .line::after{
+        width: 2px;
+        height: 33px;
+        top: 25px;
+        right: 16%;
+    }
+}
+
+@media (max-width: 769px) {
+    .navbar{
+        padding: 15px 40px;
+    }
+
+    .dropdown{
+        display: none;
+    }
+
+    .search-grp{
+        width: 311px;
+    }
+
+    .cat-form{
+        margin-left: 55px;
+    }
+
+    .line::after{
+        width: 2px;
+        height: 33px;
+        top: 25px;
+        right: 20%;
+    }
+
+    .cart-div{
+        margin-left: 0;
+    }
+}
+
+@media screen  and (min-width: 0px) and (max-width: 430px) {
+    .navbar{
+        padding: 15px;
+    }
+
+    .cat-form{
+        display: none;
+    }
+
+}
